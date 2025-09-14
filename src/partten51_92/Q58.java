@@ -1,0 +1,33 @@
+package partten51_92;
+
+public class Q58 {
+
+	public static void main(String[] args) {
+		int n = 5;
+		printPartten(n);
+	}
+
+	public static void printPartten(int n) {
+		int star = 1;
+		int space = n - 1;
+
+		for (int i = 1; i <= n; i++) {
+
+			// print spaces
+			for (int j = 1; j <= space; j++) {
+				System.out.print("  ");
+			}
+
+			// print decreasing numbers from i down to 1
+			for (int k = 1; k <= star; k--) {
+				System.out.printf("%4d", k);
+			}
+
+			// update
+			star++;
+			space--;
+
+			System.out.println();
+		}
+	}
+}

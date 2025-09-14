@@ -1,0 +1,27 @@
+package partten51_92;
+
+public class Q64 {
+
+	public static void main(String[] args) {
+		int n=5;
+		printPartten(n);
+
+	}
+
+	public static void printPartten(int n) {
+		int star = 1; int space = n-1; char x = 'A';
+		for(int i=1;i<=n;i++) {
+			
+			for(int j=1;j<=space;j++) {
+				System.out.print("  ");
+			}
+			char ch = x;
+		for(int k=1;k<=star;k++) {
+			System.out.print( ch-- +"   ");
+			
+		}
+		star++;space--;x++ ;
+			System.out.println();
+		}
+	}
+}
